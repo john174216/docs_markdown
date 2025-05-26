@@ -41,11 +41,11 @@
 
 ## Notas
 
-**Codificación H.265:** *En todos los casos, se asume que el video proviene de una cámara IP o módulo de procesamiento (Jetson Nano, Raspberry Pi, etc.) que codifique el video antes de enviarlo al radio.*
+**Codificación H.265:** *En todos los casos, se asume que el video proviene de una cámara IP o módulo de procesamiento (como Jetson Nano, Raspberry Pi, etc.) que codifique el video antes de enviarlo.*
 
 **Bandas licenciadas:** *Algunos modelos como Radwin requieren licencia de frecuencia (regulada por el MTC).*
 
-**QoS (Calidad de Servicio):** *Fundamental para garantizar video fluido y baja latencia en transmisión de sensores críticos o control remoto.*
+**QoS (Calidad de Servicio):** *Importante para garantizar video fluido y baja latencia en transmisión de datos críticos y para control remoto.*
 
 ## 5. Propuestas
 
