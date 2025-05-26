@@ -54,6 +54,7 @@
     * Por ello, se propone implementar equipos y antenas para usar la banda de 2.4 GHz en una infraestructura robusta que asegure la calidad de la transmisión de datos. 
     * De manera general, el sistema consistiría en integrar una antena de 2.4 GHz en el cuadrúpedo para enviar los datos hacia una modulo receptor con antena integrada ubicado en un lugar de monitoreo (denominado “Estación base”). 
     * Cuando se reciba y envíe información desde la Estación Base, se podrá conectar con interfaces físicas de control y visualización de datos; asimismo, también se podrá subir dicha información a un servidor web desde el cual integrar otras interfaces gráficas en apps o software usado por la empresa.
+    ![Imagen de propuesta 01](/public/diagrama_comunicacion_cuadrupedo/propuesta01.PNG "Propuesta 01")
 
 * ### Segunda propuesta
     * Se propone hacer uso de la infraestructura de comunicación existente en el interior de la mina.
@@ -64,6 +65,7 @@
     * Se podría reconsiderar el uso de los dispositivos Ubiquiti NanoStation Loco M2 a modo de Backhaul para ampliar la cobertura, e incluso si el ONT solo tiene salida Ethernet disponible.  
     * El dispositivo de control HMI tambien se conectaría a la red interna de la empresa.
     * El servidor (backend) para recepción de datos, se ejecutaría en un equipo tambien conectado a la red interna de la empresa.
+    ![Imagen de propuesta 02](/public/diagrama_comunicacion_cuadrupedo/propuesta02.PNG "Propuesta 02")
 
 ## 6. Equipos
 * **Alfa AWUS036ACH** - S/. 100 - [link](https://tiendamia.com/pe/producto?amz=B0752CTSGD)
