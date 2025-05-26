@@ -112,8 +112,8 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
     *   Se hace IOU Matching con cualquiera de ambos enfoques (Detección de objetos)
         *   Si los cuadros delimitadores de CAMERA y LiDAR se superponen, en 2D o 3D, consideramos que ese obstáculo es el mismo.
 
-        ![06](/public/img_percepcion/06.webp "06")
+        ![06](/public/img_percepcion/6.webp "06")
 
     *   Luego se puede hacer Tracking de esos objetivos con Filtro de Kalman (EKF, UKF) (Seguimiento de objetivos 3D)
 
-        ![07](/public/img_percepcion/07.webp "07")
+        ![07](/public/img_percepcion/7.webp "07")
