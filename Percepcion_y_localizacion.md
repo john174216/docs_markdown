@@ -46,6 +46,7 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
     * `sensor_msgs/PointCloud2` para nubes de puntos
 
 * Diferencias entre cámara Estereo y RGB-D
+
 | Característica              | **Cámara RGB-D**                                                               | **Cámara estereoscópica**                              |
 | --------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------ |
 | **Profundidad (Depth)**     | Se obtiene mediante sensores activos (infrarrojos, láser estructurado, o TOF). | Se calcula por triangulación pasiva entre dos cámaras. |
@@ -56,6 +57,7 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
 | **Costo computacional**     | Bajo (ya entrega el depth procesado).                                          | Alto (hay que correr algoritmo estéreo en CPU/GPU).    |
 | **Tipo de sensor**          | Activo.                                                                        | Pasivo (dos sensores RGB).                             |
 
+* Diferencias entre las camaras que se tienen
 
 | Característica           | OAK-D Lite (Estéreo)                              | RGB-D (como RealSense D435i)         |
 | ------------------------ | ------------------------------------------------- | ------------------------------------ |
@@ -66,6 +68,7 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
 | Exteriores con luz solar | Mejor (no depende de IR)                          | Puede fallar (saturación IR)         |
 
 * **Algoritmos y frameworks**
+
 | Herramienta / Framework   | Descripción breve                               |
 | ------------------------- | ----------------------------------------------- |
 | **RTAB-Map**              | SLAM RGB-D / LiDAR con capacidad semántica.     |
