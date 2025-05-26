@@ -86,7 +86,7 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
 * Unitree 4D LiDAR L2 - [LiDAR](https://mtlab.pe/producto/pantalla-nextion-discovery-2-4-2-8-3-5-hmi-tactil-resistivo/?srsltid=AfmBOori3gilh8l7x1lkFazwUiYRDs4wsNZnnPL4dXag-zkqk4xFQKcK)
 * FLIR Lepton (3.5 o 3.0) o Seek Thermal CompactPRO
 
-![Comparación entre sensores](/image/sample.webp "Diferencias entre sensores")
+![Comparación entre sensores](/public/sensor_fusion_3.webp "Diferencias entre sensores")
 
 ## 5. Propuestas
 
