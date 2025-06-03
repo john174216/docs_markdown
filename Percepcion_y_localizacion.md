@@ -99,6 +99,7 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
 ![Comparación entre sensores](/public/sensor_fusion_3.webp "Diferencias entre sensores")
 
 * FLIR Lepton (3.5 o 3.0) o Seek Thermal CompactPRO
+
 | Modelo              | Resolución     | Interfaz     | Compatibilidad      | Bibliotecas              | Radiometría | Precio Estimado | Usos Típicos                                  |
 |---------------------|----------------|--------------|----------------------|---------------------------|--------------|------------------|------------------------------------------------|
 | **FLIR Lepton 3.5** | 160×120        | SPI + I2C    | ✅ Pi / ✅ Jetson     | `pylepton`, `libuvc`, OpenCV | Sí           | 250–350 USD | Robótica, visión térmica embebida, detección de temperatura |
