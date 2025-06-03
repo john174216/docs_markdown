@@ -80,17 +80,37 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
 | **OctoMap**               | Representación 3D jerárquica del entorno.       |
 | **Nav2**                  | Sistema completo de navegación en ROS 2.        |
 
+* **Datasets Públicos**
+
+| Nombre del Dataset | Descripción | Aplicaciones | Formato de Etiquetas | Acceso |
+|--------------------|-------------|---------------|-----------------------|--------|
+| **DsLMF+** | 138,004 imágenes con categorías como personal, cascos, comportamiento y maquinaria. | Detección de anomalías y monitoreo de seguridad en minas subterráneas. | YOLO, COCO | [Figshare](https://springernature.figshare.com/articles/dataset/An_open_dataset_for_intelligent_recognition_and_classification_of_abnormal_condition_in_longwall_mining/22654945?backTo=%2Fcollections%2FDsLMF_An_open_dataset_for_intelligent_recognition_of_abnormal_condition_in_underground_longwall_mining_face%2F6307599&file=40215118) |
+| **DsDPM 66** | 105,096 imágenes de operaciones de perforación, con etiquetas como tuberías, taladros y EPP. | Monitoreo inteligente y detección de anomalías en perforación. | YOLO, COCO | [1:Mineros, cascos, EPPs](https://figshare.com/articles/dataset/_b_An_Open_Paradigm_Dataset_for_Intelligent_Monitoring_of_Underground_Drilling_Scenarios_in_Coal_Mines_b_/26135107/1) [2:Equipos de perforación, Interacción de personal](https://figshare.com/articles/dataset/_b_An_Open_Paradigm_Dataset_for_Intelligent_Monitoring_of_Underground_Drilling_Scenarios_in_Coal_Mines_b_/26135008/1)|
+| **MineCareerDB** | Imágenes de alta resolución enfocadas en visión computacional en minería. | Clasificación y detección de equipos/situaciones en minería. | No especificado | [Link01](https://data.mendeley.com/datasets/c5s76mj4bm/5) [Link02](https://www.sciencedirect.com/science/article/pii/S2352340924009387)|
+| **SH17 Dataset** | 8,099 imágenes con 75,994 instancias de 17 clases de EPP. | Detección de EPP en entornos industriales (incluye minería). | No especificado | [Kaggle](https://www.kaggle.com/datasets/mugheesahmad/sh17-dataset-for-ppe-detection) |
+
+![Dataset EPPs](/public/img_percepcion/datasets.gif "Dataset EPPs")
+
 ## 4. Equipos
-* Cámara Intel® RealSense™ depth camera D435i - [RGB-D](https://tiendamia.com/pe/producto?amz=B0752CTSGD)
-* Cámara OAK-D Lite - [Estéreo](https://arteus.pe/products/ubiquiti-locom2-nanostation-airmax-locom2-cpe-hasta-150-mbps-frecuencia-2-ghz-2412-2462-mhz-con-antena-integrada-de-8-dbi?srsltid=AfmBOoo6EFRcyCYr_JQsBFI25YdWthLGxmDeiysaxI71t-NhPGL1tSmX)
-* Unitree 4D LiDAR L2 - [LiDAR](https://mtlab.pe/producto/pantalla-nextion-discovery-2-4-2-8-3-5-hmi-tactil-resistivo/?srsltid=AfmBOori3gilh8l7x1lkFazwUiYRDs4wsNZnnPL4dXag-zkqk4xFQKcK)
-* FLIR Lepton (3.5 o 3.0) o Seek Thermal CompactPRO
+* Cámara Intel® RealSense™ depth camera D435i - [RGB-D](https://www.intelrealsense.com/depth-camera-d435i/)
+* Cámara OAK-D Lite - [Estéreo](https://shop.luxonis.com/products/oak-d-lite-1)
+* Unitree 4D LiDAR L2 - [LiDAR](https://www.unitree.com/L2)
 
 ![Comparación entre sensores](/public/sensor_fusion_3.webp "Diferencias entre sensores")
 
-## 5. Propuestas
+* FLIR Lepton (3.5 o 3.0) o Seek Thermal CompactPRO
+| Modelo              | Resolución     | Interfaz     | Compatibilidad      | Bibliotecas              | Radiometría | Precio Estimado | Usos Típicos                                  |
+|---------------------|----------------|--------------|----------------------|---------------------------|--------------|------------------|------------------------------------------------|
+| **FLIR Lepton 3.5** | 160×120        | SPI + I2C    | ✅ Pi / ✅ Jetson     | `pylepton`, `libuvc`, OpenCV | Sí           | 250–350 USD | Robótica, visión térmica embebida, detección de temperatura |
+| **FLIR Boson**      | 320×256 – 640×512 | USB / MIPI / UART | ⚠️ Pi* / ✅ Jetson | SDK oficial FLIR, ROS, OpenCV | Sí        | >1000 USD | Drones, inspección industrial |
+| **Seek Compact PRO**| 320×240        | USB          | ⚠️ Pi** / ✅ Jetson   | `libseek`, ROS no oficial | Sí           | 300 USD   | Proyectos móviles, robótica, vigilancia térmica  |
+| **AMG8833**         | 8×8            | I2C          | ✅ Pi / ✅ Jetson     | Adafruit Python Library   | No           | (35 USD)      | Detección de presencia, IoT, patrones térmicos básicos |
+| **MLX90640**        | 32×24          | I2C          | ✅ Pi / ✅ Jetson     | Python, C++, OpenCV       | Sí           | 60–80 USD   | Prototipos térmicos, medición sin contacto, robótica ligera |
 
-* ### Primera propuesta
+
+## 5. Propuestas de funcionalidades
+
+* ### Tracking de objetos
     *   Mediante sensor LiDAR, obtener nubes de puntos
 
     ![01](/public/img_percepcion/01.webp "01")
@@ -120,3 +140,16 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
     *   Luego se puede hacer Tracking de esos objetivos con Filtro de Kalman (EKF, UKF) (Seguimiento de objetivos 3D)
 
         ![07](/public/img_percepcion/7.webp "07")
+
+* ### Detección de víctimas
+    * Se puede usar el algoritmo de YOLO con su funcionalidad de Estimación de Pose para detectar personas desmayadas por inhalación de gases tóxicos. Esto mediante detección de persona + estimación de pose.
+    * Se puede utilizar la cámara térmica para inferir estado de la persona y confirmar que el "objeto" detectado sigue emitiendo calor corporal.
+
+| Herramienta / Framework            | Función                                      | Compatibilidad | Detalle                                                 |
+| ---------------------------------- | ----------------------------------------------- | --------------------------------- | ----------------------------------------------------- |
+| **YOLO + Keypoint head**           | Detección + puntos clave del cuerpo humano      | Jetson (con TensorRT)           | Nueva variante YOLOv8 permite pose estimation directa |
+| **OpenPose**                       | Estimación de pose por keypoints (muy completo) | Jetson (pesado), PC          | Preciso, pero pesado para embebidos                   |
+| **MediaPipe Pose**                 | Pose rápida y eficiente (Google)                | Jetson Nano / Pi                | Liviano, buena integración                            |
+| **Lightweight OpenPose (Pytorch)** | Red ligera de pose estimation                   | Jetson Nano                     | Equilibrio entre precisión y velocidad                |
+
+![Pose Estimation](/public/img_percepcion/pose_estimation.jpg "Pose Estimation")
