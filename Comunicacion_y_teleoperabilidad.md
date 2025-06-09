@@ -90,7 +90,7 @@ NanoStation Loco M2 es un equipo de exterior compacto, incluye una antena MIMO d
     ![Ubiquiti 01](/public/ubiquiti_M2/materiales.png "Ubiquiti 01")
     ![Ubiquiti 02](/public/ubiquiti_M2/esquema.png "Ubiquiti 02")
     ![Ubiquiti 03](/public/ubiquiti_M2/dimensiones.png "Ubiquiti 03")
-    ![Ubiquiti 04](/public/ubiquiti_M2/dimensiones.png "Ubiquiti 04")
+    ![Ubiquiti 04](/public/ubiquiti_M2/configuracion.png "Ubiquiti 04")
 
 ### Servidor
 * **BACKEND**
