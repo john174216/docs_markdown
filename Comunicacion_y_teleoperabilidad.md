@@ -73,3 +73,46 @@
 * **Pantalla TFT Nextion** - S/. 180 [link](https://mtlab.pe/producto/pantalla-nextion-discovery-2-4-2-8-3-5-hmi-tactil-resistivo/?srsltid=AfmBOori3gilh8l7x1lkFazwUiYRDs4wsNZnnPL4dXag-zkqk4xFQKcK)
 * **Joystick**
 * **Herramientas:** Python, Node.js, React
+
+## 7. Anexos
+### Ubiquiti Nanostation Loco M2
+NanoStation Loco M2 es un equipo de exterior compacto, incluye una antena MIMO de doble polaridad para la banda de 2.4 GHz. La velocidad de transferencia real del equipo es de hasta 150 Mbps (18.75 MBps).
+* #### Características
+    * 2X2 MIMO / 2.4GHz
+    * 23dBm, Antena integrada 8dBi
+    * 150+Mbps
+    * Inyector PoE PoE 24v incluido
+    * Un puerto Ethernet 10/100 Mbps
+    * Anchos de canal ajustable de 5 hasta 40 MHz
+    * Seguridad: WEP, WPA, WPA2 y MAC ACL
+    * Señalización propietaria: airMAX (TDMA)
+
+    ![Ubiquiti 01](/public/ubiquiti_M2/materiales.png "Ubiquiti 01")
+    ![Ubiquiti 02](/public/ubiquiti_M2/esquema.png "Ubiquiti 02")
+    ![Ubiquiti 03](/public/ubiquiti_M2/dimensiones.png "Ubiquiti 03")
+    ![Ubiquiti 04](/public/ubiquiti_M2/dimensiones.png "Ubiquiti 04")
+
+### Servidor
+* **BACKEND**
+    * Flask
+    * Python
+    * Docker
+    * PostgresSQL
+    * MongoDB
+    * Node.js
+
+* **FRONTEND**
+    * React.js
+    * CSS
+    * TailwindCSS
+    * AJAX
+    * Redis
+    * HTTP/MQTT/WebSockets
+
+### Comunicación
+* LAN
+* DHCP
+* UDP
+* QoS
+* IP Dinámico
+
