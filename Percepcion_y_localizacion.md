@@ -62,7 +62,7 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
 | Característica           | OAK-D Lite (Estéreo)                              | RGB-D (como RealSense D435i)         |
 | ------------------------ | ------------------------------------------------- | ------------------------------------ |
 | Fuente de profundidad    | Cálculo por triangulación estéreo                 | Luz infrarroja + sensor IR           |
-| Iluminación activa       | ❌ No (usa luz ambiente)                           | ✅ Sí (usa proyector infrarrojo)      |
+| Iluminación activa       | No (usa luz ambiente)                           | Sí (usa proyector infrarrojo)      |
 | Precisión en distancias  | Buena, pero puede verse afectada por poca textura | Alta, incluso en escenas sin textura |
 | Interiores oscuros       | Regular                                           | Muy buena                            |
 | Exteriores con luz solar | Mejor (no depende de IR)                          | Puede fallar (saturación IR)         |
@@ -109,7 +109,7 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
 | **MLX90640**        | 32×24          | I2C          | ✅ Pi / ✅ Jetson     | Python, C++, OpenCV       | Sí           | 60–80 USD   | Prototipos térmicos, medición sin contacto, robótica ligera |
 
 * **FLIR Lepton 3.5, 160×120 56º radiométrica**
-https://www.apliter.com/producto/flir-lepton-3-5-160x120-56o-radiometrica/
+[Apliter](https://www.apliter.com/producto/flir-lepton-3-5-160x120-56o-radiometrica/)
     * Resolución térmica:
         * Lepton 2.5: 80 × 60
         * Lepton 3.5: 160 × 120 (radiométrica)
@@ -117,26 +117,25 @@ https://www.apliter.com/producto/flir-lepton-3-5-160x120-56o-radiometrica/
     * Compatibilidad:  bibliotecas como pylepton
 
 * **LiDAR Unitree L2**
-https://nfmrobotics.com/
-https://www.robotshop.com/es/products/lidar-4d-unitree-l2
+[NFMRobotics](https://nfmrobotics.com/) -
+[Robotshop](https://www.robotshop.com/es/products/lidar-4d-unitree-l2)
     * Detecta objetos a 30 m de distancia con 64.000 puntos/seg
     * Ofrece un campo de visión ultra amplio de 360° x 96°
 
 * **Seek CompactPRO**
-https://phonetronic.pe/camara-termica/camara-termica-seek-compact-pro-iphone/?srsltid=AfmBOor4s9WTu0_KHbNttEOaZDugpKbhASN9cpNxkMO3xXVJImdB-Z3t
+[Phonetronic](https://phonetronic.pe/camara-termica/camara-termica-seek-compact-pro-iphone/?srsltid=AfmBOor4s9WTu0_KHbNttEOaZDugpKbhASN9cpNxkMO3xXVJImdB-Z3t)
     * Resolución térmica: 320 × 240
     * Interfaz: USB‑C
     * Compatibilidad: drivers UVC
 
 * **Seek Compact**
-https://tiendamia.com/pe/producto?amz=B00NYWABAA
+[Tiendamia](https://tiendamia.com/pe/producto?amz=B00NYWABAA)
     * Resolución térmica: 206 × 156
     * Interfaz: USB‑C (UVC compatible con Linux)
     * Compatibilidad: vía libuvc o libseek
 
 * **Pure Thermal Mini USB interface board para FLIR Lepton**
-https://www.apliter.com/producto/pure-thermal-mini-usb-interface-board-para-flir-lepton/
-
+[Apliter](https://www.apliter.com/producto/pure-thermal-mini-usb-interface-board-para-flir-lepton/)
 
 ## 5. Propuestas de funcionalidades
 
@@ -178,8 +177,8 @@ https://www.apliter.com/producto/pure-thermal-mini-usb-interface-board-para-flir
 | Herramienta / Framework            | Función                                      | Compatibilidad | Detalle                                                 |
 | ---------------------------------- | ----------------------------------------------- | --------------------------------- | ----------------------------------------------------- |
 | **YOLO + Keypoint head**           | Detección + puntos clave del cuerpo humano      | Jetson (con TensorRT)           | Nueva variante YOLOv8 permite pose estimation directa |
-| **OpenPose**                       | Estimación de pose por keypoints (muy completo) | Jetson (pesado), PC          | Preciso, pero pesado para embebidos                   |
-| **MediaPipe Pose**                 | Pose rápida y eficiente (Google)                | Jetson Nano / Pi                | Liviano, buena integración                            |
+| **OpenPose**                       | Estimación de pose por keypoints  | Jetson (pesado), PC          | Preciso, pero pesado para embebidos                   |
+| **MediaPipe Pose**                 | Pose rápida y eficiente                | Jetson Nano / Pi                | Liviano, buena integración                            |
 | **Lightweight OpenPose (Pytorch)** | Red ligera de pose estimation                   | Jetson Nano                     | Equilibrio entre precisión y velocidad                |
 
 ![Pose Estimation](/public/img_percepcion/pose_estimation.jpg "Pose Estimation")
