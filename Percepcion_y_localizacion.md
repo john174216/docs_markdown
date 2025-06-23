@@ -108,6 +108,35 @@ incrementales) y para velocidad de giro del eje mediante tacómetros
 | **AMG8833**         | 8×8            | I2C          | ✅ Pi / ✅ Jetson     | Adafruit Python Library   | No           | (35 USD)      | Detección de presencia, IoT, patrones térmicos básicos |
 | **MLX90640**        | 32×24          | I2C          | ✅ Pi / ✅ Jetson     | Python, C++, OpenCV       | Sí           | 60–80 USD   | Prototipos térmicos, medición sin contacto, robótica ligera |
 
+* **FLIR Lepton 3.5, 160×120 56º radiométrica**
+https://www.apliter.com/producto/flir-lepton-3-5-160x120-56o-radiometrica/
+    * Resolución térmica:
+        * Lepton 2.5: 80 × 60
+        * Lepton 3.5: 160 × 120 (radiométrica)
+    * Interfaz: SPI + I2C (requiere adaptador PureThermal o breakout board)
+    * Compatibilidad:  bibliotecas como pylepton
+
+* **LiDAR Unitree L2**
+https://nfmrobotics.com/
+https://www.robotshop.com/es/products/lidar-4d-unitree-l2
+    * Detecta objetos a 30 m de distancia con 64.000 puntos/seg
+    * Ofrece un campo de visión ultra amplio de 360° x 96°
+
+* **Seek CompactPRO**
+https://phonetronic.pe/camara-termica/camara-termica-seek-compact-pro-iphone/?srsltid=AfmBOor4s9WTu0_KHbNttEOaZDugpKbhASN9cpNxkMO3xXVJImdB-Z3t
+    * Resolución térmica: 320 × 240
+    * Interfaz: USB‑C
+    * Compatibilidad: drivers UVC
+
+* **Seek Compact**
+https://tiendamia.com/pe/producto?amz=B00NYWABAA
+    * Resolución térmica: 206 × 156
+    * Interfaz: USB‑C (UVC compatible con Linux)
+    * Compatibilidad: vía libuvc o libseek
+
+* **Pure Thermal Mini USB interface board para FLIR Lepton**
+https://www.apliter.com/producto/pure-thermal-mini-usb-interface-board-para-flir-lepton/
+
 
 ## 5. Propuestas de funcionalidades
 

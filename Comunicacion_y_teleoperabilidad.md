@@ -74,6 +74,51 @@
 * **Joystick**
 * **Herramientas:** Python, Node.js, React
 
+* **Ubiquiti NanoStation M2** (S/. 545)
+https://lleva.pe/airmax-nanostation-m2-ubiquiti
+
+* **Ubiquiti NanoStation Loco M2** (S/. 247)
+https://arteus.pe/products/ubiquiti-locom2-nanostation-airmax-locom2-cpe-hasta-150-mbps-frecuencia-2-ghz-2412-2462-mhz-con-antena-integrada-de-8-dbi?srsltid=AfmBOopETa1jNi7TNut8Qswk5keWUhFzW2THgbDKEx3O-MaFyrpTl-kv
+
+* **Radwin 2000**
+https://store.nexus.com.pe/producto?codigo=RW-2954-D200
+
+* **Radwin 5000 HPMP HSU 505 SFF**
+https://wirelessunits.com/radwin-5000-hpmp-hsu-505-sff-series-subscriber-unit-radio-17-dbi-integrated-antenna-5-xghz-5mbps/
+
+* **Cisco IW3702 (S/.968 - Reacondicinado)**
+https://www.networkhardwares.com/es-pe/products/cisco-iw3702-4e-b-k9-cisco-industrial-wrls-ap-3702-4port-rf-on-top-b-reg-domain-iw3702-4e-b-k9-cisco-iw3702-4e-b-k9-cisco-industrial-wrls-ap-3702-4port-rf-on-top-b-reg-domain-iw3702-4e-b-k9?srsltid=AfmBOooOTKJT-DFOX6C5wvzQKCcGG3f6hLrmBtxZf3M9gDuca-zfKZo8
+
+* **Alfa AWUS036ACH (S/.105)**
+https://tiendamia.com/pe/producto?amz=B0752CTSGD
+
+* **TP-Link CPE210**
+https://www.tp-link.com/es/business-networking/pharos-cpe/cpe210/
+    * Velocidad hasta 54 Mbps (802.11g), conexión externa de 12 dBi.
+    * Ideal para enlaces cortos de alta penetración (hasta 15 km).
+    * Soporta PoE, resistente a condiciones exteriores
+
+* **TL-WA5210G (S/. 178)**
+https://cuscoinformatico.com/access-point-tp-link-tl-wa5210g
+    * Doble polarización MIMO 2×2, hasta 300 Mbps.
+    * Enlaces exteriores de 5 + km, soporta modos AP/cliente/bridge/repetidor.
+
+* **EnGenius ENS202**
+https://www.engeniustech.com/span/engenius-products/outdoor-wireless-bridge-ens202/
+    * Outdoor CPE de nivel profesional (300 Mbps 11n).
+
+| Equipo                            | Proveedor                       | Precio aprox.       | Notas                                                                             |
+| --------------------------------- | ------------------------------- | ------------------- | --------------------------------------------------------------------------------- |
+| Radwin 5000 HSU 505 SFF           | WirelessUnits.com               | USD 336             | Con antena externa por N-type ([wirelessunits.com][1], [networkhardwares.com][2]) |
+| Radwin 5000 HSU 505 (integrado)   | GNS Wireless                    | USD 473             | 13 dBi integrado                                                                  |
+| Radwin 5000 (usado)               | eBay (WirelessUnits/Ezbusiness) | Desde USD 95        | Usado                                                                             |
+| Cisco IW3702‑2E (reacondicionado) | eBay                            | USD 200–300 + envío | Cliente industrial Wi‑Fi                                                          |
+| Cisco IW3702‑4E (reacondicionado) | NetworkHardwares.com            | USD 241             | Dual banda industrial                                                             |
+
+[1]: https://wirelessunits.com/radwin-5000-hpmp-hsu-505-sff-series-subscriber-unit-radio-connectorized-2x-n-type-2-4ghz-5mbps/?utm_source=chatgpt.com "RADWIN 5000 HPMP HSU 505 SFF Series Subscriber Unit Radio ..."
+[2]: https://www.networkhardwares.com/es/products/cisco-iw3702-4e-b-k9-cisco-industrial-wrls-ap-3702-4port-rf-on-top-b-reg-domain-iw3702-4e-b-k9-cisco-iw3702-4e-b-k9-cisco-industrial-wrls-ap-3702-4port-rf-on-top-b-reg-domain-iw3702-4e-b-k9?srsltid=AfmBOorGazxc93AeEIWCQx-vF_9Lvdd8GW_LQ3q-1c-77ba8GTWZ6FK-&utm_source=chatgpt.com "Cisco Industrial Inalámbrico AP 3702 4 Puertos RF Superior B ..."
+
+
 ## 7. Anexos
 ### Ubiquiti Nanostation Loco M2
 NanoStation Loco M2 es un equipo de exterior compacto, incluye una antena MIMO de doble polaridad para la banda de 2.4 GHz. La velocidad de transferencia real del equipo es de hasta 150 Mbps (18.75 MBps).
@@ -115,4 +160,3 @@ NanoStation Loco M2 es un equipo de exterior compacto, incluye una antena MIMO d
 * UDP
 * QoS
 * IP Dinámico
-
